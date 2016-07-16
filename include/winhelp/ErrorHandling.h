@@ -6,6 +6,6 @@
 
 namespace WinHelper
 {
-	static WINHELP_FUN std::string GetLastSystemError();
+	WINHELP_FUN std::string GetLastSystemError();
 }
 #endif

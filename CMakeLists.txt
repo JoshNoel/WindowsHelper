@@ -23,3 +23,4 @@ include_directories(${additional_include_dirs})
 
 add_library(${TARGET_NAME} SHARED ${SRC_FILE_LIST} ${HEADER_FILE_LIST})
 set_target_properties(${TARGET_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set_target_properties(${TARGET_NAME} PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
