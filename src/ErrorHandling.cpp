@@ -1,6 +1,8 @@
 #include "winhelp/ErrorHandling.h"
 #include <Windows.h>
-std::string ErrorHandling::GetLastSystemError()
+using namespace WinHelper;
+
+std::string GetLastSystemError()
 {
 	DWORD error_code = GetLastError();
 	if (error_code == 0)

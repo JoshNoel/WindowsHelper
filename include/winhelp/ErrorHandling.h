@@ -4,8 +4,8 @@
 #include "WindowsHelper.h"
 #include <string>
 
-class ErrorHandling
+namespace WinHelper
 {
 	static WINHELP_FUN std::string GetLastSystemError();
-};
+}
 #endif
